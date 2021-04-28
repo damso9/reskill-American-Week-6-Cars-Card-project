@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --blue: hsl(184, 100%, 22%);
+    --green: hsl(179, 100%, 13%);
+    --white:  hsla(0, 0%, 100%, 0.75);
+    --grey: hsl(0, 0%, 95%);
+}
+.box {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid red; */
+    /* height: 25em; */
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box1, .box2, .box3 {
+    /* border: 2px solid var(--blue); */
+    width: 100%;
+    
+}
+section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: 2px solid purple; */
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    color: var(--grey);
+}
+p {
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+.box1 {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.box2 {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.box3 {
+    background-color: var(--green);
+    color: var(--white);
+}
+.learn-more {
+    margin-top: 3em;
+}
+button {
+    padding: 1.5em 2em;
+    background: var(--grey);
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 30px;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.box1 button {
+    color: var(--orange);
+}
+.box2 button {
+    color: var(--blue);
+}
+.box3 button {
+    color: var(--green);
+}
+@media only screen and (max-width: 378px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    p {
+        font-size: 1.0em;
+        line-height: 1.8;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    p {
+        font-size: 1.0em;
+        line-height: 1.8;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    button {
+        width: 50%;
+    }
+}
